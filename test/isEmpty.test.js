@@ -1,3 +1,8 @@
+/*
+ * Test the isEmpty function.
+ * Function should return true if parameter is an empty string, array or map. Otherwise false.
+ * If parameter have no own enumerable string keyed properties, return true.
+ */
 import { expect } from "chai";
 
 import isEmpty from "../src/isEmpty.js";
@@ -24,7 +29,7 @@ describe("Testing isEmpty function", function () {
     done();
   });
 
-  it("4. Objects that have no own enumerable string keye properties", function (done) {
+  it("4. Objects that have no own enumerable string keyed properties", function (done) {
     expect(isEmpty(orders[5].totalPrice)).to.be.true;
     expect(isEmpty(orders[6].totalPrice)).to.be.true;
     expect(isEmpty(null)).to.be.true;

@@ -1,3 +1,7 @@
+/*
+ * Test the isBoolean function.
+ * Function should return true if parameter is a boolean or an object. Otherwise false.
+ */
 import { expect } from "chai";
 
 import isBoolean from "../src/isBoolean.js";
@@ -34,4 +38,3 @@ describe("Testing isBoolean function", function () {
     done();
   });
 });
-

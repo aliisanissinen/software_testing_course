@@ -1,3 +1,16 @@
+/*
+ * Test data. List contains objects that reflect one order.
+ * Date: date of order
+ * customerFirstName: customer's first name
+ * customerLastName: customer's last name
+ * phone: customer's phone number
+ * shippingAddress: where the order is sent
+ * items: products that have been ordered, by name
+ * totalPrice: total price, includes delivery fee
+ * status: status of the order (waiting, canceled, confirmed, on its way, delivered, returned)
+ * approvedByCustomer: customer accepts the order at the end, should always be true
+ */
+
 export const orders = [
   {
     date: "01/12/2021",
