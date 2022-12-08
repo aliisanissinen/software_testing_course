@@ -50,7 +50,7 @@ export const orders = [
     status: "confirmed",
   },
   {
-    date: "11/11/2022",
+    date: "11/2022",
     customerFirsName: "Pertti",
     customerLastName: "",
     phone: "0502421414",
@@ -60,7 +60,7 @@ export const orders = [
     status: "on its way",
   },
   {
-    date: "03/03/2013",
+    date: "24/24/2013",
     customerFirsName: "Sakari",
     customerLastName: "Saamela",
     phone: "",
