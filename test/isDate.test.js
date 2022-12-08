@@ -24,5 +24,3 @@ describe("Testing isDate function", function () {
     done();
   });
 });
-
-//palauttaa false, jos arvo ei ole Date-objekti
