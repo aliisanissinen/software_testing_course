@@ -1,4 +1,7 @@
-import chai from "chai";
+/*
+ * Test the isDate function.
+ * Function should return true if parameter is Date type. Otherwise false.
+ */
 import { expect } from "chai";
 
 import isDate from "../src/isDate.js";

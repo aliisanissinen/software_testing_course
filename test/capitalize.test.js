@@ -1,3 +1,9 @@
+/*
+ * Test the capitalize function.
+ * Function should return a string with the first letter in uppercase
+ * and the rest in lowercase.
+ * Shouls throw an error if the parameter is not a string.
+ */
 import { expect } from "chai";
 
 import capitalize from "../src/capitalize.js";
