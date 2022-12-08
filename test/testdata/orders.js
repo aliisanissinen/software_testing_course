@@ -5,7 +5,7 @@
  * customerLastName: customer's last name
  * phone: customer's phone number
  * shippingAddress: where the order is sent
- * items: products that have been ordered, by name
+ * items: products that have been ordered, list of objects (name, price, pcs)
  * totalPrice: total price, includes delivery fee
  * status: status of the order (waiting, canceled, confirmed, on its way, delivered, returned)
  * approvedByCustomer: customer accepts the order at the end, should always be true
@@ -18,7 +18,7 @@ export const orders = [
     customerLastName: "Mehilainen",
     phone: "04012312312",
     shippingAddress: "Address 123 28345 Helsinki",
-    items: ["t-shirt"],
+    items: [{ name: "t-shirt", price: 12.95, pcs: 1 }],
     totalPrice: 12.95,
     status: "delivered",
     approvedByCustomer: true,
@@ -29,8 +29,12 @@ export const orders = [
     customerLastName: "pekkanen",
     phone: "0409329393",
     shippingAddress: "Address 53 22545 Turku",
-    items: ["t-shirt", "hat", "jeans"],
-    totalPrice: 81.99,
+    items: [
+      { name: "t-shirt", price: 12.95, pcs: 1 },
+      { name: "hat", price: 22.95, pcs: 1 },
+      { name: "jeans", price: 39.95, pcs: 1 },
+    ],
+    totalPrice: 75.85,
     status: "on its way",
     approvedByCustomer: true,
   },
@@ -40,8 +44,13 @@ export const orders = [
     customerLastName: "SauKkOnen",
     phone: "0401122424",
     shippingAddress: "Address 11 12545 Vaasa",
-    items: ["jeans", "boots", "socks", "jacket", "jeans"],
-    totalPrice: 215.45,
+    items: [
+      { name: "jeans", price: 39.95, pcs: 2 },
+      { name: "boots", price: 79.95, pcs: 1 },
+      { name: "socks", price: 9.95, pcs: 1 },
+      { name: "jacket", price: 99.95, pcs: 1 },
+    ],
+    totalPrice: 269.75,
     status: "on its way",
     approvedByCustomer: true,
   },
@@ -51,8 +60,8 @@ export const orders = [
     customerLastName: "HALONEN",
     phone: "0401122499",
     shippingAddress: "a",
-    items: ["jacket"],
-    totalPrice: 78.99,
+    items: [{ name: "jacket", price: 99.95, pcs: 1 }],
+    totalPrice: 99.95,
     status: "confirmed",
     approvedByCustomer: true,
   },
@@ -62,8 +71,8 @@ export const orders = [
     customerLastName: "Rouvala",
     phone: "",
     shippingAddress: "Address 17 12312 Kajaani",
-    items: ["hat"],
-    totalPrice: 10.99,
+    items: [{ name: "hat", price: 22.95, pcs: 4 }],
+    totalPrice: 91.80,
     status: "confirmed",
     approvedByCustomer: true,
   },
@@ -73,8 +82,12 @@ export const orders = [
     customerLastName: "",
     phone: "0502421414",
     shippingAddress: "",
-    items: ["hat", "jeans", "suit"],
-    totalPrice: 240.0,
+    items: [
+      { name: "jeans", price: 39.95, pcs: 1 },
+      { name: "hat", price: 22.95, pcs: 1 },
+      { name: "suit", price: 199.99, pcs: 1 },
+    ],
+    totalPrice: 262.89,
     status: "on its way",
     approvedByCustomer: true,
   },
