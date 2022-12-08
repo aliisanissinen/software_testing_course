@@ -8,6 +8,7 @@ export const orders = [
     items: ["t-shirt"],
     totalPrice: 12.95,
     status: "delivered",
+    approvedByCustomer: true,
   },
   {
     date: "06/06/2022",
@@ -18,6 +19,7 @@ export const orders = [
     items: ["t-shirt", "hat", "jeans"],
     totalPrice: 81.99,
     status: "on its way",
+    approvedByCustomer: true,
   },
   {
     date: "11/01/2022",
@@ -28,6 +30,7 @@ export const orders = [
     items: ["jeans", "boots", "socks", "jacket", "jeans"],
     totalPrice: 215.45,
     status: "on its way",
+    approvedByCustomer: true,
   },
   {
     date: "11/09/2022",
@@ -38,6 +41,7 @@ export const orders = [
     items: ["jacket"],
     totalPrice: 78.99,
     status: "confirmed",
+    approvedByCustomer: true,
   },
   {
     date: "11/11/2022",
@@ -48,6 +52,7 @@ export const orders = [
     items: ["hat"],
     totalPrice: 10.99,
     status: "confirmed",
+    approvedByCustomer: true,
   },
   {
     date: "11/2022",
@@ -58,6 +63,7 @@ export const orders = [
     items: ["hat", "jeans", "suit"],
     totalPrice: 240.0,
     status: "on its way",
+    approvedByCustomer: true,
   },
   {
     date: "24/24/2013",
@@ -68,5 +74,6 @@ export const orders = [
     items: [],
     totalPrice: 0.0,
     status: "delivered",
+    approvedByCustomer: false,
   },
 ];

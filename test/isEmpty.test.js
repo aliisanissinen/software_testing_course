@@ -24,7 +24,7 @@ describe("Testing isEmpty function", function () {
     done();
   });
 
-  it("3. Objects that have no own enumerable string keye properties", function (done) {
+  it("4. Objects that have no own enumerable string keye properties", function (done) {
     expect(isEmpty(orders[5].totalPrice)).to.be.true;
     expect(isEmpty(orders[6].totalPrice)).to.be.true;
     expect(isEmpty(null)).to.be.true;

@@ -24,7 +24,7 @@ describe("Testing capitalize function", function () {
     done();
   });
 
-  it("3. Text is empty or wrong type", function (done) {
+  it("4. Text is empty or wrong type", function (done) {
     expect(capitalize("")).to.equal("").to.be.a('string');
     expect(capitalize(orders[0].totalPrice)).to.equal(`${orders[0].totalPrice}`).to.be.a('string');;
     expect(function() {capitalize(orders[2].items);}).to.throw(TypeError);
