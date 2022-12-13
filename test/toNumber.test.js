@@ -5,7 +5,7 @@
 import { expect } from "chai";
 
 import toNumber from "../src/toNumber.js";
-import { products } from "../testdata/products.js";
+import { products } from "./testdata/products.js";
 
 // Tests
 describe("Testing toNumber function", function() {

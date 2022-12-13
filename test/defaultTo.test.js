@@ -5,7 +5,7 @@
 import { expect } from "chai";
 
 import defaultTo from "../src/defaultTo.js";
-import { products } from "../testdata/products.js";
+import { products } from "./testdata/products.js";
 
 const defaultValues = [0, "pcs.", [], false];
 const values = [100, 1.5, "category", ["water", "sugar", "strawberry"], true];

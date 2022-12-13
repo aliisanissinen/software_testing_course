@@ -6,7 +6,7 @@ import { expect } from "chai";
 
 import every from "../src/every.js";
 import isEmpty from "../src/isEmpty.js";
-import { products, hasOpenOrders, returnNecessaryFields } from "../testdata/products.js";
+import { products, hasOpenOrders, returnNecessaryFields } from "./testdata/products.js";
 
 // Tests
 describe("Testing every fuction", function() {

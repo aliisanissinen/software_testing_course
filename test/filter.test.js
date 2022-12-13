@@ -5,7 +5,7 @@
 import { expect } from "chai";
 
 import filter from "../src/filter.js";
-import { products, hasOpenOrders } from "../testdata/products.js";
+import { products, hasOpenOrders } from "./testdata/products.js";
 
 const iteratedArrayChangedError = "Iterated array changed";
 

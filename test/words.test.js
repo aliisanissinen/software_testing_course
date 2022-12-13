@@ -5,7 +5,7 @@
 import { expect } from "chai";
 
 import words from "../src/words.js";
-import { products } from "../testdata/products.js";
+import { products } from "./testdata/products.js";
 
 const justWords = "water sugar strawberry"
 const wordsAndCommas = "water, sugar, strawberry";
