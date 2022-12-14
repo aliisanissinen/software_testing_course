@@ -1,16 +1,19 @@
 /*
  * Test the defaultTo function
- * TODO: documentation 
+ * 
+ * The function is used to fill unfilled optional fields when adding new products
+ * 
+ * The function should
+ * - return 'defaultValue' if 'value' is NaN/null/undefined
+ * - return 'value if value is not NaN/null/undefined
  */
 import { expect } from "chai";
 
 import defaultTo from "../src/defaultTo.js";
-import { products } from "./testdata/products.js";
 
-const defaultValues = [0, "pcs.", [], false];
-const values = [100, 1.5, "category", ["water", "sugar", "strawberry"], true];
+const defaultValues = [0, 1.5, "pcs.", ["food"], false];
+const values = [100, 2.5, "category", ["water", "sugar", "strawberry"], true];
 
-// Tests
 describe("Testing defaultTo function", function() {
     it("1. Returns default value", function(done) {
         for (let defaultValue in defaultValues) {
