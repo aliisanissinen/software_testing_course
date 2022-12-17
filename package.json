@@ -5,7 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "mocha": "_mocha -b -R spec",
     "test": "nyc npm run mocha"
   },
   "author": "",
