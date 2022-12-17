@@ -5,17 +5,25 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha -R mocha-lcov-reporter"
+    "test": "mocha -R spec",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "coveralls": "^3.1.1",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0"
   },
   "dependencies": {
     "chai": "^4.3.7",
     "eslint": "^8.28.0",
     "mocha": "^10.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
   }
 }
