@@ -17,19 +17,24 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: npm install
-        run: | 
-          npm install
+        run: npm install
+
       - run: npm ci
+
       - run: npm run build --if-present
-      - name: Tests and test coverage
+
+      - name: Tests & coverage
         run: npm run coverage
-        continue-on-error: true
+
       - name: Coveralls
+        if: always()
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
