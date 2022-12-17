@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "npx c8 --x \"src/.internal/**\" --x \"test/**\" --reporter lcov mocha"
+    "coverage": "npx c8 --x \"src/.internal/**\" --x \"test/**\" --reporter lcov --reporter text mocha"
   },
   "author": "",
   "license": "MIT",
