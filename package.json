@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha -R spec",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "test": "mocha -R mocha-lcov-reporter",
+    "coverage": "nyc mocha"
   },
   "author": "",
   "license": "MIT",
@@ -21,9 +21,17 @@
     "mocha": "^10.1.0"
   },
   "nyc": {
+    "all": true,
+    "include": [
+      "src/*.js"
+    ],
+    "exclude": [
+      "src/.internal",
+      "test"
+    ],
     "reporter": [
-      "lcov",
-      "text-summary"
+      "text",
+      "lcov"
     ]
   }
 }
