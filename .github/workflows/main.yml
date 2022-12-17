@@ -26,7 +26,9 @@ jobs:
           npm install
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm test
+      - name: Tests and test coverage
+        run: npm run coverage
+        continue-on-error: true
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
