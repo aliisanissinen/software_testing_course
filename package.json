@@ -5,33 +5,19 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha -R mocha-lcov-reporter",
-    "coverage": "nyc mocha"
+    "test": "mocha",
+    "coverage": "npx c8 --x \"src/.internal/**\" --x \"test/**\" mocha"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "c8": "^7.12.0",
     "coveralls": "^3.1.1",
-    "mocha-lcov-reporter": "^1.3.0",
-    "nyc": "^15.1.0"
+    "mocha-lcov-reporter": "^1.3.0"
   },
   "dependencies": {
     "chai": "^4.3.7",
     "eslint": "^8.28.0",
     "mocha": "^10.1.0"
-  },
-  "nyc": {
-    "all": true,
-    "include": [
-      "src/*.js"
-    ],
-    "exclude": [
-      "src/.internal",
-      "test"
-    ],
-    "reporter": [
-      "text",
-      "lcov"
-    ]
   }
 }
