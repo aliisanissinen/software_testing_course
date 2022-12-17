@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "mocha -R mocha-lcov-reporter"
   },
   "author": "",
   "license": "MIT",
