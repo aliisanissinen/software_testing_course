@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "mocha": "_mocha -b -R spec",
-    "test": "nyc npm run mocha"
+    "test": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose"
   },
   "author": "",
   "license": "MIT",
