@@ -2,7 +2,7 @@
  * Test the every function
  *
  * The function is used to check
- * - the default fields when adding new products using isEmpty function
+ * - the always necessary fields when adding new products using isEmpty function
  * - the order status of products being deleted
  *
  * The function should
